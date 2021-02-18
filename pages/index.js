@@ -1,65 +1,75 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+/*import styles from '../styles/globals.css'*/
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      
+      <header>
+        <nav>
+          <ul>
+            <li><a href="/empresa">Empresa</a></li>
+            <li><a href="/underconstruction">Serviços</a></li>
+            <li><a href="/underconstruction">Obras</a></li>
+            <li><a href="/underconstruction">Projectos</a></li>
+            <li><a href="/underconstruction">Contactos</a></li>
+          </ul>
+        </nav>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
+        <div className="logo">
+          <a href="/">
+            <img src="/images/logos/Base_JIMBuilding_mini.png" alt="JIM Building logo"/>
           </a>
         </div>
-      </main>
+      </header>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
+      <section>
+        <div>
+          <figure className="slide">
+            <img src="/images/slideshow/first.jpg" alt="Construcion picture"/>
+          </figure>
+        </div>
+      </section>
+
+      <footer>
+        <div className="impic">
+          <a href="http://www.impic.pt/impic/">
+            <img src="/images/logos/Símbolo_Impic_JIMBUILDING-removebg.png" alt="Impic"/>
+          </a>
+        </div>
+
+        <div className="ruis">
+          <img src="/images/logos/Logotipo_versao_cor-removebg.png" alt="RUIS"/>
+        </div>
+        
+        <div className="aiccopn">
+          <a href="https://www.aiccopn.pt/">
+            <img src="/images/logos/Logo_Associado_AICCOPN-removebg.png" alt="AICCOPN"/>
+          </a>
+        </div>
+
+        <table>
+          <tbody>
+            <tr>
+              <td>jorge.leao@jimbuilding.pt</td>
+              <td>|</td>
+              <td className="number">919191919</td>
+            </tr>
+            <tr>
+              <td>joao.leao@jimbuilding.pt</td>
+              <td>|</td>
+              <td className="number">919191919</td>
+            </tr>
+          </tbody>
+        </table>
       </footer>
+
+        
     </div>
   )
 }
