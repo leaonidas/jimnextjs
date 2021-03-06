@@ -2,8 +2,16 @@ import Container from '../global/container';
 
 export default function Header() {
   return (
-    <header>
+    <header className="header">
       <Container>
+        <div className="logo">
+          <a href="/">
+            <img
+              src="/images/logos/Base_JIMBuilding_mini.png"
+              alt="JIM Building logo"
+            />
+          </a>
+        </div>
         <nav>
           <ul>
             <li>
@@ -23,15 +31,6 @@ export default function Header() {
             </li>
           </ul>
         </nav>
-
-        <div className="logo">
-          <a href="/">
-            <img
-              src="/images/logos/Base_JIMBuilding_mini.png"
-              alt="JIM Building logo"
-            />
-          </a>
-        </div>
       </Container>
     </header>
   );

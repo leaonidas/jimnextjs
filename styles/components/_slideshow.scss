@@ -1,0 +1,17 @@
+.slideshow {
+  display: inline-block;
+  width: 100%;
+
+  &__slide {
+    display: block;
+    width: 806px;
+    height: 454px;
+    margin-right: auto;
+    margin-left: auto;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

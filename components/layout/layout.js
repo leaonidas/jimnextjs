@@ -7,7 +7,7 @@ export default function Layout({ children }) {
     <>
       <Meta />
       <Header />
-      <div>{children}</div>
+      <div className="page-wrapper">{children}</div>
       <Footer />
     </>
   );
