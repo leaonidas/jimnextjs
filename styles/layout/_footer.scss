@@ -1,0 +1,48 @@
+.footer {
+  width: 100%;
+  color: white;
+  background-color: $stiletto;
+
+  > .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  &-logos {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+
+  &-logos__item {
+    margin: 0 20px;
+
+    &.impic img {
+      width: 73px;
+    }
+
+    &.ruis img {
+      width: 60px;
+    }
+
+    &.aiccopn img {
+      width: 204px;
+    }
+  }
+
+  a {
+    color: white;
+
+    &:link,
+    &:visited {
+      color: ​white;
+      text-decoration: none;
+    }
+
+    &:hover,
+    &:focus {
+      color: $maroon;
+    }
+  }
+}
