@@ -1,33 +1,34 @@
-import Container from '../global/container';
+import Container from 'components/global/container';
+import Link from 'next/link';
 
 export default function Header() {
   return (
     <header className="header">
       <Container>
         <div className="logo">
-          <a href="/">
+          <Link href="/">
             <img
               src="/images/logos/Base_JIMBuilding_mini.png"
               alt="JIM Building logo"
             />
-          </a>
+          </Link>
         </div>
         <nav>
           <ul>
             <li>
-              <a href="/empresa">Empresa</a>
+              <Link href="/empresa">Empresa</Link>
             </li>
             <li>
-              <a href="/servicos">Serviços</a>
+              <Link href="/servicos">Serviços</Link>
             </li>
             <li>
-              <a href="/obras">Obras</a>
+              <Link href="/obras">Obras</Link>
             </li>
             <li>
-              <a href="/projectos">Projectos</a>
+              <Link href="/projectos">Projectos</Link>
             </li>
             <li>
-              <a href="/contactos">Contactos</a>
+              <Link href="/contactos">Contactos</Link>
             </li>
           </ul>
         </nav>
