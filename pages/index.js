@@ -7,7 +7,20 @@ export default function Home() {
     <Layout>
       <section className="home-slideshow">
         <Container>
-          <Slideshow />
+          <Slideshow>
+            <div className="slideshow__slide">
+              <img src="/images/slideshow/first.jpg" alt="Construction sight" />
+            </div>
+            <div className="slideshow__slide">
+              <img
+                src="/images/slideshow/second.jpg"
+                alt="Construction sight"
+              />
+            </div>
+            <div className="slideshow__slide">
+              <img src="/images/slideshow/third.jpg" alt="Construction sight" />
+            </div>
+          </Slideshow>
         </Container>
       </section>
     </Layout>

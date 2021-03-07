@@ -5,45 +5,84 @@ export default function Footer() {
     <footer className="footer">
       <Container>
         <div className="footer-contactos">
+          <h2>Contactos</h2>
+          <div className="footer-contactos__item">
+            <strong>Jorge Leão</strong>
+            <div>
+              <a href="tel:9123123123">912312312</a>
+            </div>
+            <div>
+              <a href="mailto:jorgeleao@jimbuilding.pt">
+                jorgeleao@jimbuilding.pt
+              </a>
+            </div>
+          </div>
+          <div className="footer-contactos__item">
+            <strong>João Leão</strong>
+            <div>
+              <a href="tel:9123123123">912312312</a>
+            </div>
+            <div>
+              <a href="mailto:joaoleao@jimbuilding.pt">
+                joaoleao@jimbuilding.pt
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="footer-escritorio">
+          <h2>Escritório</h2>
+          <strong>Guimarães</strong>
           <p>
-            João Leão | <a href="tel:9123123123">912312312</a>
-          </p>
-          <p>
-            Jorge Leão | <a href="tel:9123123123">912312312</a>
+            Rua João Oliveira Salgado, <br />
+            Lote 6 - Fração B - R/C
           </p>
         </div>
 
         <div className="footer-logos">
-          <div className="footer-logos__item impic">
-            <a
-              href="http://www.impic.pt/impic/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src="/images/logos/Símbolo_Impic_JIMBUILDING-removebg.png"
-                alt="Impic Logo"
-              />
-            </a>
-          </div>
-
-          <div className="footer-logos__item ruis">
-            <img
-              src="/images/logos/Logotipo_versao_cor-removebg.png"
-              alt="RUIS Logo"
-            />
-          </div>
-
           <div className="footer-logos__item aiccopn">
             <a href="https://www.aiccopn.pt/" target="_blank" rel="noreferrer">
-              <img
-                src="/images/logos/Logo_Associado_AICCOPN-removebg.png"
-                alt="AICCOPN Logo"
-              />
+              <img src="/images/logos/logo-aiccopn.jpg" alt="AICCOPN Logo" />
             </a>
+          </div>
+          <div className="footer-logos__group">
+            <div className="footer-logos__item impic">
+              <a
+                href="http://www.impic.pt/impic/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src="/images/logos/logo-impic.jpg" alt="Impic Logo" />
+              </a>
+            </div>
+
+            <div className="footer-logos__item ruis">
+              <img src="/images/logos/logo-ruis.jpg" alt="RUIS Logo" />
+            </div>
           </div>
         </div>
       </Container>
+      <div className="subfooter">
+        <Container>
+          <p>Copyright &copy; JIM BUILDING - ENGENHARIA, LDA. 2021</p>
+          <div className="subfooter-icons">
+            <a
+              href="https://www.facebook.com/JIM-Building-Engenharia-620231095066877"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src="/images/facebook.svg" alt="FB Logo" />
+            </a>
+            <a
+              href="https://www.instagram.com/jimbuilding/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src="/images/instagram.svg" alt="IG logo" />
+            </a>
+          </div>
+        </Container>
+      </div>
     </footer>
   );
 }
