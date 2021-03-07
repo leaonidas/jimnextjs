@@ -9,33 +9,33 @@ export default function Footer() {
           <div className="footer-contactos__item">
             <strong>Jorge Leão</strong>
             <div>
-              <a href="tel:9123123123">912312312</a>
+              <a href="tel:917396460">917396460</a>
             </div>
             <div>
-              <a href="mailto:jorgeleao@jimbuilding.pt">
-                jorgeleao@jimbuilding.pt
+              <a href="mailto:jorge.leao@jimbuilding.pt">
+                jorge.leao@jimbuilding.pt
               </a>
             </div>
           </div>
           <div className="footer-contactos__item">
             <strong>João Leão</strong>
             <div>
-              <a href="tel:9123123123">912312312</a>
+              <a href="tel:911757851">911757851</a>
             </div>
             <div>
-              <a href="mailto:joaoleao@jimbuilding.pt">
-                joaoleao@jimbuilding.pt
+              <a href="mailto:joao.leao@jimbuilding.pt">
+                joao.leao@jimbuilding.pt
               </a>
             </div>
           </div>
         </div>
 
         <div className="footer-escritorio">
-          <h2>Escritório</h2>
+          <h2>Sede</h2>
           <strong>Guimarães</strong>
           <p>
             Rua João Oliveira Salgado, <br />
-            Lote 6 - Fração B - R/C
+            nº 375
           </p>
         </div>
 
