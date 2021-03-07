@@ -1,3 +1,6 @@
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
+
 .slideshow {
   display: inline-block;
   width: 100%;
@@ -15,5 +18,37 @@
 
       @include object-fit(cover, center);
     }
+  }
+}
+
+.slick-prev,
+.slick-next {
+  &::before {
+    color: $stiletto;
+  }
+}
+
+.slick-dots {
+  left: 0px;
+  right: auto;
+  width: auto;
+  bottom: -10px;
+  display: inline-block;
+  padding: 12px 16px;
+  background-color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  li button::before {
+    width: 16px;
+    height: 16px;
+    background-color: #eaeaea;
+    border: 1px solid #eaeaea;
+    border-radius: 50%;
+    display: inline-block;
+    content: '';
+  }
+  li.slick-active button::before {
+    background-color: white;
+    border: 1px solid $stiletto;
   }
 }
