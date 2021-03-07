@@ -48,6 +48,12 @@
     border: 1px solid #eaeaea;
     border-radius: 50%;
     opacity: 1;
+    transition: opacity 0.3s ease-in;
+
+    &:hover,
+    &:focus {
+      opacity: 0.3;
+    }
   }
 
   li.slick-active button::before {

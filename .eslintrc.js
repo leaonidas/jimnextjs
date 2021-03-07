@@ -32,6 +32,7 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'react/prop-types': 'off',
     'simple-import-sort/sort': 'error',
+    'jsx-a11y/anchor-is-valid': 'off',
     'unicorn/filename-case': [
       'error',
       {

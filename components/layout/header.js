@@ -7,10 +7,12 @@ export default function Header() {
       <Container>
         <div className="logo">
           <Link href="/">
-            <img
-              src="/images/logos/Base_JIMBuilding_mini.png"
-              alt="JIM Building logo"
-            />
+            <a>
+              <img
+                src="/images/logos/jimbuilding-logo.svg"
+                alt="JIM Building logo"
+              />
+            </a>
           </Link>
         </div>
         <nav>
