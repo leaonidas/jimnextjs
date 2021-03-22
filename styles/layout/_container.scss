@@ -19,4 +19,11 @@
   @media (min-width: $screen-lg) {
     max-width: 1200px;
   }
+
+  &--big {
+    @media (min-width: $screen-lg) {
+      width: calc(100% - 60px);
+      max-width: 1600px;
+    }
+  }
 }

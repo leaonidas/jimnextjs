@@ -13,32 +13,33 @@
   &-logos {
     display: flex;
     flex-flow: column wrap;
-  }
 
-  &-logos__group {
-    display: flex;
-    flex-flow: row wrap;
-    margin-top: 30px;
-  }
-
-  &-logos__item {
-    margin: 0 20px;
-
-    &.impic img {
-      width: 73px;
+    &__group {
+      display: flex;
+      flex-flow: row wrap;
+      margin-top: 30px;
     }
 
-    &.ruis img {
-      width: 60px;
-    }
+    &__item {
+      margin: 0 20px;
 
-    &.aiccopn img {
-      width: 204px;
+      &.impic img {
+        width: 73px;
+      }
+
+      &.ruis img {
+        width: 60px;
+      }
+
+      &.aiccopn img {
+        width: 204px;
+      }
     }
   }
 
   h2 {
     margin: 0 0 20px;
+    line-height: 1.6em;
   }
 
   &-contactos__item {

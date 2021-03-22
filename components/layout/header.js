@@ -1,4 +1,5 @@
 import Container from 'components/global/container';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Header() {
@@ -8,9 +9,10 @@ export default function Header() {
         <div className="logo">
           <Link href="/">
             <a>
-              <img
+              <Image
                 src="/images/logos/jimbuilding-logo.svg"
                 alt="JIM Building logo"
+                layout="fill"
               />
             </a>
           </Link>
