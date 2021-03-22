@@ -12,7 +12,8 @@ export default function Header() {
               <Image
                 src="/images/logos/jimbuilding-logo.svg"
                 alt="JIM Building logo"
-                layout="fill"
+                width="160"
+                height="56"
               />
             </a>
           </Link>

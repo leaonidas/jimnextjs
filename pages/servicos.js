@@ -5,13 +5,17 @@ export default function Servicos() {
   return (
     <Layout>
       <Container>
-        <h1>Serviços</h1>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium
-          quaerat assumenda et alias. Aut quidem tenetur laborum natus nemo,
-          sunt, labore ullam perferendis adipisci, pariatur dolorem facilis
-          beatae magni laboriosam.
-        </p>
+        <section>
+          <div className="section__header">
+            <h1>Serviços</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Praesentium quaerat assumenda et alias. Aut quidem tenetur laborum
+              natus nemo, sunt, labore ullam perferendis adipisci, pariatur
+              dolorem facilis beatae magni laboriosam.
+            </p>
+          </div>
+        </section>
       </Container>
     </Layout>
   );

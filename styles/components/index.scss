@@ -1,3 +1,26 @@
 @import './slideshow';
 @import './masonry-grid';
 @import './obra-thumbnail';
+
+section {
+  margin-bottom: 80px;
+
+  .section__header {
+    margin-top: 90px;
+    margin-bottom: 80px;
+
+    > h1 {
+      margin: 0 0 12px;
+      font-size: 48px;
+      color: #333;
+    }
+
+    > p {
+      max-width: 650px;
+      margin: 0 0 12px;
+      font-size: 18px;
+      line-height: 1.6em;
+      color: #333;
+    }
+  }
+}
