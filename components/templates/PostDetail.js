@@ -1,5 +1,5 @@
 import Container from 'components/global/Container';
-import Markdown from 'components/global/Markdown';
+import { Markdown } from 'components/global/Markdown';
 import BaseLayout from 'components/layout/BaseLayout';
 import BaseMeta from 'components/layout/BaseMeta';
 import Image from 'next/image';
