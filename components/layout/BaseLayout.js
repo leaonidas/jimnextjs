@@ -1,11 +1,11 @@
+import BaseMeta from 'components/layout/BaseMeta';
 import Footer from 'components/layout/Footer';
 import Header from 'components/layout/Header';
-import Meta from 'components/layout/Meta';
 
 export default function Layout({ children }) {
   return (
     <>
-      <Meta />
+      <BaseMeta />
       <Header />
       <div className="page-wrapper">{children}</div>
       <Footer />

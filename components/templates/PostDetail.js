@@ -1,16 +1,16 @@
 import BaseLayout from 'components/layout/BaseLayout';
-import Meta from 'components/layout/Meta';
+import BaseMeta from 'components/layout/BaseMeta';
+import Container from 'components/layout/Container';
 import Image from 'next/image';
 
-import Container from './Container';
-import { Markdown } from './Markdown';
+import { Markdown } from '../global/Markdown';
 
-export default function DetailPost({ post }) {
+export default function PostDetail({ post }) {
   const { title, location, year } = post;
 
   return (
     <BaseLayout>
-      <Meta
+      <BaseMeta
         title={post.title}
         desc={post.description}
         link={post.canonicalUrl}

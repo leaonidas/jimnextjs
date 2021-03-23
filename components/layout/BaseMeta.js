@@ -1,5 +1,5 @@
-import Head from 'next/head';
 const { globals } = require('globals.ts');
+import Head from 'next/head';
 
 export default function Meta(props) {
   const { title, description, link, image } = props;

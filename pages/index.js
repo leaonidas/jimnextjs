@@ -1,4 +1,4 @@
-import Container from 'components/global/Container.js';
+import Container from 'components/global/Container';
 import Slideshow from 'components/global/Slideshow';
 import BaseLayout from 'components/layout/BaseLayout';
 

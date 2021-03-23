@@ -1,10 +1,12 @@
-import DetailPost from 'components/global/DetailPost';
-import glob from 'glob';
 const { loadPost } = require('loader.ts');
+
+import PostDetail from 'components/templates/PostDetail';
+import glob from 'glob';
 
 function Obras(props) {
   const { post } = props;
-  return <DetailPost post={post} />;
+
+  return <PostDetail post={post} />;
 }
 
 export const getStaticPaths = () => {

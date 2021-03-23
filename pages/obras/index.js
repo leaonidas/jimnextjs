@@ -1,8 +1,9 @@
+const { loadObrasPosts } = require('loader.ts');
+
 import Container from 'components/global/Container';
 import MasonryGrid from 'components/global/MasonryGrid';
 import ObraThumbnail from 'components/global/ObraThumbnail';
 import BaseLayout from 'components/layout/BaseLayout';
-const { loadObrasPosts } = require('loader.ts');
 
 export default function Obras(props) {
   return (
