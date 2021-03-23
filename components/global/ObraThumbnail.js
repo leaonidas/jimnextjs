@@ -4,7 +4,7 @@ export default function ObraThumbnail(props, { className = '' }) {
   const { title, location, year, slug, imagePath, imageAlt } = props;
 
   return (
-    <Link href={slug}>
+    <Link href={`/${slug}`}>
       <a className={`obra-thumbnail ${className}`}>
         <div className="project-info">
           <div className="project-info__inner">
@@ -18,7 +18,7 @@ export default function ObraThumbnail(props, { className = '' }) {
             </div>
           </div>
         </div>
-        <img src={imagePath} alt={imageAlt} />
+        <img src={`${imagePath}`} alt={imageAlt} />
       </a>
     </Link>
   );

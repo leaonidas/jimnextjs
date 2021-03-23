@@ -2,7 +2,7 @@ import DetailPost from 'components/global/DetailPost';
 import glob from 'glob';
 const { loadPost } = require('loader.ts');
 
-function Post(props) {
+function Obras(props) {
   const { post } = props;
   return <DetailPost post={post} />;
 }
@@ -24,4 +24,4 @@ export const getStaticProps = async ({ params }) => {
   return { props: { post } };
 };
 
-export default Post;
+export default Obras;

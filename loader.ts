@@ -12,10 +12,12 @@ export type PostData = {
   published: boolean;
   datePublished: number;
   tags?: string[];
-  bannerPhoto?: string;
+  bannerImage?: string;
+  bannerImageAlt?: string;
+  thumbnailImage?: string;
+  thumbnailImageAlt?: string;
   location?: string;
   year?: number;
-  thumbnailPhoto?: string;
 };
 
 type RawFile = { path: string; contents: string };
@@ -36,8 +38,10 @@ export const mdToPost = (file: RawFile): PostData => {
     datePublished: metadata.data.datePublished || null,
     description: metadata.data.description || null,
     canonicalUrl: metadata.data.canonicalUrl || `${globals.url}/${path}`,
-    bannerPhoto: metadata.data.bannerPhoto || null,
-    thumbnailPhoto: metadata.data.thumbnailPhoto || null,
+    thumbnailImage: metadata.data.thumbnailImage || null,
+    thumbnailImageAlt: metadata.data.thumbnailImageAlt || null,
+    bannerImage: metadata.data.bannerImage || null,
+    bannerImageAlt: metadata.data.bannerImageAlt || null,
     location: metadata.data.location || null,
     year: metadata.data.year || null,
     content: metadata.content,

@@ -4,8 +4,10 @@ published: true
 datePublished: 1594425078471
 location: Guimarães
 year: 2018
-thumbnailPhoto: /images/obras/placeholders/imagem-0.jpg
-bannerPhoto: /images/obras/placeholders/imagem-0.jpg
+thumbnailImage: /images/obras/placeholders/imagem-0.jpg
+thumbnailAlt: Fachada edifício
+bannerImage: /images/obras/placeholders/imagem-0.jpg
+bannerImageAlt: Fachada edifício
 canonicalUrl: https://jimbuilding.com/obras/obra-0
 ---
 

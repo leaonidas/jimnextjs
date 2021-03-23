@@ -1,10 +1,10 @@
 import Container from 'components/global/Container';
 import Slideshow from 'components/global/Slideshow';
-import Layout from 'components/layout/Layout';
+import LayoutBase from 'components/layout/LayoutBase';
 
 export default function Home() {
   return (
-    <Layout>
+    <LayoutBase>
       <section className="home-slideshow">
         <Container className="container--big">
           <Slideshow>
@@ -23,6 +23,6 @@ export default function Home() {
           </Slideshow>
         </Container>
       </section>
-    </Layout>
+    </LayoutBase>
   );
 }

@@ -1,9 +1,9 @@
 import Container from 'components/global/Container';
-import Layout from 'components/layout/Layout';
+import LayoutBase from 'components/layout/LayoutBase';
 
 export default function Contactos() {
   return (
-    <Layout>
+    <LayoutBase>
       <Container>
         <section>
           <div className="section__header">
@@ -47,6 +47,6 @@ export default function Contactos() {
           </form>
         </section>
       </Container>
-    </Layout>
+    </LayoutBase>
   );
 }

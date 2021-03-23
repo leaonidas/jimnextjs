@@ -1,9 +1,9 @@
 import Container from 'components/global/Container';
-import Layout from 'components/layout/Layout';
+import LayoutBase from 'components/layout/LayoutBase';
 
 export default function Empresa() {
   return (
-    <Layout>
+    <LayoutBase>
       <Container>
         <section>
           <div className="section__header">
@@ -17,6 +17,6 @@ export default function Empresa() {
           </div>
         </section>
       </Container>
-    </Layout>
+    </LayoutBase>
   );
 }
