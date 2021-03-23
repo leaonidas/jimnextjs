@@ -1,9 +1,8 @@
+import Container from 'components/global/Container';
+import Markdown from 'components/global/Markdown';
 import BaseLayout from 'components/layout/BaseLayout';
 import BaseMeta from 'components/layout/BaseMeta';
-import Container from 'components/layout/Container';
 import Image from 'next/image';
-
-import { Markdown } from '../global/Markdown';
 
 export default function PostDetail({ post }) {
   const { title, location, year } = post;
