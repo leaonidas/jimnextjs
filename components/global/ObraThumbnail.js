@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
-export default function ObraThumbnail(properties, { className = '' }) {
-  const { title, location, year, slug, imagePath, imageAlt } = properties;
+export default function ObraThumbnail(props, { className = '' }) {
+  const { title, location, year, slug, imagePath, imageAlt } = props;
 
   return (
     <Link href={slug}>

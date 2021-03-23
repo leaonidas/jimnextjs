@@ -1,7 +1,7 @@
-import Container from 'components/global/container';
-import MasonryGrid from 'components/global/masonry-grid';
-import ObraThumbnail from 'components/global/obra-thumbnail';
-import Layout from 'components/layout/layout';
+import Container from 'components/global/Container';
+import MasonryGrid from 'components/global/Masonry-grid';
+import ObraThumbnail from 'components/global/ObraThumbnail';
+import Layout from 'components/layout/Layout';
 
 export default function Projectos() {
   return (
@@ -19,7 +19,7 @@ export default function Projectos() {
                 title="Obra 0"
                 location="Guimarães"
                 year="2018"
-                slug="/obra-0"
+                slug="/obras/obra-0"
                 imagePath="/images/obras/placeholders/imagem-0.jpg"
                 imageAlt="Obra 0"
               />

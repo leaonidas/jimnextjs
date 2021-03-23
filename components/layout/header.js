@@ -1,4 +1,4 @@
-import Container from 'components/global/container';
+import Container from 'components/global/Container';
 import Image from 'next/image';
 import Link from 'next/link';
 

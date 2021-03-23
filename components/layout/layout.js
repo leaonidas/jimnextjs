@@ -1,6 +1,6 @@
-import Footer from 'components/layout/footer';
-import Header from 'components/layout/header';
-import Meta from 'components/layout/meta';
+import Footer from 'components/layout/Footer';
+import Header from 'components/layout/Header';
+import Meta from 'components/layout/Meta';
 
 export default function Layout({ children }) {
   return (

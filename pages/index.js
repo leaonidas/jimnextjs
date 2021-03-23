@@ -1,6 +1,6 @@
-import Container from 'components/global/container';
-import Slideshow from 'components/global/slideshow';
-import Layout from 'components/layout/layout';
+import Container from 'components/global/Container';
+import Slideshow from 'components/global/Slideshow';
+import Layout from 'components/layout/Layout';
 
 export default function Home() {
   return (

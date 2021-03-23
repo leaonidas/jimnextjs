@@ -33,10 +33,12 @@ module.exports = {
     'react/prop-types': 'off',
     'simple-import-sort/sort': 'error',
     'jsx-a11y/anchor-is-valid': 'off',
+    'unicorn/prevent-abbreviations': 'off',
     'unicorn/filename-case': [
       'error',
       {
         cases: {
+          pascalCase: true,
           camelCase: true,
           kebabCase: true
         }

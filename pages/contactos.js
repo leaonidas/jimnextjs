@@ -1,5 +1,5 @@
-import Container from 'components/global/container';
-import Layout from 'components/layout/layout';
+import Container from 'components/global/Container';
+import Layout from 'components/layout/Layout';
 
 export default function Contactos() {
   return (
