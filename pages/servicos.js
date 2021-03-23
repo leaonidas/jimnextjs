@@ -1,9 +1,9 @@
 import Container from 'components/global/Container';
-import LayoutBase from 'components/layout/LayoutBase';
+import BaseLayout from 'components/layout/BaseLayout';
 
 export default function Servicos() {
   return (
-    <LayoutBase>
+    <BaseLayout>
       <Container>
         <section>
           <div className="section__header">
@@ -17,6 +17,6 @@ export default function Servicos() {
           </div>
         </section>
       </Container>
-    </LayoutBase>
+    </BaseLayout>
   );
 }

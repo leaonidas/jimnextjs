@@ -30,9 +30,6 @@ export default function Header() {
               <Link href="/obras">Obras</Link>
             </li>
             <li>
-              <Link href="/projectos">Projectos</Link>
-            </li>
-            <li>
               <Link href="/contactos">Contactos</Link>
             </li>
           </ul>

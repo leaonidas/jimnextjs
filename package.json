@@ -29,6 +29,7 @@
     "glob": "7.1.6",
     "gray-matter": "4.0.2",
     "next": "10.0.5",
+    "next-page-transitions": "1.0.0-beta.2",
     "object-fit-images": "3.2.4",
     "raw-loader": "4.0.2",
     "react": "17.0.1",
@@ -36,6 +37,7 @@
     "react-markdown": "5.0.3",
     "react-masonry-css": "1.0.14",
     "react-slick": "0.28.0",
+    "react-transition-group": "4.4.1",
     "sass": "^1.32.8",
     "sass-loader": "11.0.1",
     "slick-carousel": "1.8.1"

@@ -1,4 +1,4 @@
-import LayoutBase from 'components/layout/LayoutBase';
+import BaseLayout from 'components/layout/BaseLayout';
 import Meta from 'components/layout/Meta';
 import Image from 'next/image';
 
@@ -9,7 +9,7 @@ export default function DetailPost({ post }) {
   const { title, location, year } = post;
 
   return (
-    <LayoutBase>
+    <BaseLayout>
       <Meta
         title={post.title}
         desc={post.description}
@@ -45,6 +45,6 @@ export default function DetailPost({ post }) {
           </div>
         </Container>
       </div>
-    </LayoutBase>
+    </BaseLayout>
   );
 }

@@ -1,12 +1,12 @@
 import Container from 'components/global/Container';
 import MasonryGrid from 'components/global/MasonryGrid';
 import ObraThumbnail from 'components/global/ObraThumbnail';
-import LayoutBase from 'components/layout/LayoutBase';
+import BaseLayout from 'components/layout/BaseLayout';
 const { loadObrasPosts } = require('loader.ts');
 
 export default function Obras(props) {
   return (
-    <LayoutBase>
+    <BaseLayout>
       <Container>
         <section>
           <div className="section__header">
@@ -32,7 +32,7 @@ export default function Obras(props) {
           </MasonryGrid>
         </section>
       </Container>
-    </LayoutBase>
+    </BaseLayout>
   );
 }
 
