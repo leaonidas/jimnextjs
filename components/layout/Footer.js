@@ -62,9 +62,13 @@ export default function Footer() {
           </div>
         </div>
       </Container>
+
       <div className="subfooter">
         <Container>
-          <p>Copyright &copy; JIM BUILDING - ENGENHARIA, LDA. 2021</p>
+          <p>
+            Copyright &copy; <br />
+            JIM BUILDING - ENGENHARIA, LDA. 2021
+          </p>
           <div className="subfooter-icons">
             <a
               href="https://www.facebook.com/JIM-Building-Engenharia-620231095066877"

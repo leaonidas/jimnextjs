@@ -1,0 +1,61 @@
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.#{'hide-'} {
+  // Hide >= XS breakpoint
+  &xs {
+    @media screen and (min-width: $screen-xs) {
+      display: none !important;
+    }
+  }
+  // Hide >= SM breakpoint
+  &sm {
+    @media screen and (min-width: $screen-sm) {
+      display: none !important;
+    }
+  }
+  // Hide >= MD breakpoint
+  &md {
+    @media screen and (min-width: $screen-md) {
+      display: none !important;
+    }
+  }
+  // Hide >= LG breakpoint
+  &lg {
+    @media screen and (min-width: $screen-lg) {
+      display: none !important;
+    }
+  }
+}
+
+.#{'show-'} {
+  // Show >= XS breakpoint
+  &xs {
+    @media screen and (min-width: $screen-xs) {
+      display: block !important;
+    }
+  }
+  // Show >= SM breakpoint
+  &sm {
+    @media screen and (min-width: $screen-sm) {
+      display: block !important;
+    }
+  }
+  // Show >= MD breakpoint
+  &md {
+    @media screen and (min-width: $screen-md) {
+      display: block !important;
+    }
+  }
+  // Show >= LG breakpoint
+  &lg {
+    @media screen and (min-width: $screen-lg) {
+      display: block !important;
+    }
+  }
+}

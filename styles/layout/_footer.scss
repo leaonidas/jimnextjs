@@ -5,35 +5,14 @@
 
   .container {
     display: flex;
-    flex-flow: row wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-  }
-
-  &-logos {
-    display: flex;
     flex-flow: column wrap;
+    align-items: flex-start;
+    padding-bottom: 40px;
 
-    &__group {
-      display: flex;
-      flex-flow: row wrap;
-      margin-top: 30px;
-    }
-
-    &__item {
-      margin: 0 20px;
-
-      &.impic img {
-        width: 73px;
-      }
-
-      &.ruis img {
-        width: 60px;
-      }
-
-      &.aiccopn img {
-        width: 204px;
-      }
+    @media (min-width: $screen-sm) {
+      flex-direction: row;
+      justify-content: space-between;
+      padding-bottom: 15px;
     }
   }
 
@@ -50,11 +29,45 @@
   }
 
   &-escritorio {
+    margin-bottom: 40px;
+
     p {
       margin: 0;
     }
 
     line-height: 1.6;
+  }
+
+  &-logos {
+    display: flex;
+    flex-flow: column wrap;
+
+    &__group {
+      display: flex;
+      flex-flow: row wrap;
+      margin-top: 30px;
+    }
+
+    &__item {
+      margin-right: 40px;
+      margin-left: 0;
+
+      @media (min-width: $screen-sm) {
+        margin: 0 20px;
+      }
+
+      &.impic img {
+        width: 73px;
+      }
+
+      &.ruis img {
+        width: 60px;
+      }
+
+      &.aiccopn img {
+        width: 204px;
+      }
+    }
   }
 
   a {
@@ -77,7 +90,9 @@
     background-color: $stiletto;
 
     .container {
-      align-items: center;
+      @media (min-width: $screen-sm) {
+        align-items: center;
+      }
     }
 
     &-icons a {

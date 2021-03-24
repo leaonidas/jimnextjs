@@ -6,21 +6,33 @@ section {
   margin-bottom: 80px;
 
   .section__header {
-    margin-top: 90px;
+    margin-top: 50px;
     margin-bottom: 80px;
+
+    @media (min-width: $screen-md) {
+      margin-top: 90px;
+    }
 
     > h1 {
       margin: 0 0 12px;
-      font-size: 48px;
+      font-size: 32px;
       color: #333;
+
+      @media (min-width: $screen-sm) {
+        font-size: 48px;
+      }
     }
 
     > p {
       max-width: 650px;
       margin: 0 0 12px;
-      font-size: 18px;
+      font-size: 16px;
       line-height: 1.6em;
       color: #333;
+
+      @media (min-width: $screen-sm) {
+        font-size: 18px;
+      }
     }
   }
 }

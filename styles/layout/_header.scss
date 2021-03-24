@@ -12,22 +12,65 @@
   .logo {
     position: relative;
     top: 5px;
-    width: 160px;
+    z-index: 2;
+    max-width: 120px;
     margin-left: 0;
+
+    @media (min-width: $screen-md) {
+      max-width: none;
+    }
   }
 
-  nav {
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
     display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 120px 15px 30px;
+    background: white;
+    transition: transform 0.3s ease-in;
+    transform: translateX(100%);
+
+    @media (min-width: $screen-md) {
+      position: relative;
+      top: auto;
+      left: auto;
+      width: auto;
+      height: auto;
+      padding: 0;
+      transition: none;
+      transform: none;
+    }
+
+    &--open {
+      opacity: 1;
+      transform: translateX(0);
+
+      @media (min-width: $screen-md) {
+        transform: none;
+      }
+    }
 
     ul {
+      display: flex;
+      flex-flow: column wrap;
       padding: 0;
       list-style: none;
+
+      @media (min-width: $screen-md) {
+        display: inline-block;
+        transform: none;
+      }
 
       li {
         display: inline-block;
         margin-bottom: 10px;
 
-        @media (min-width: $screen-sm) {
+        @media (min-width: $screen-md) {
           margin-bottom: 0;
         }
 
@@ -44,6 +87,82 @@
             color: $stiletto;
           }
         }
+      }
+    }
+  }
+
+  .nav-burger {
+    $color: $stiletto; // icon color
+    $background: transparent; // background color
+    $animation: 750ms; // animation speed
+    $scale: 0.8; // icon scale 68/68 default
+
+    position: relative;
+    top: -10px;
+    right: -5px;
+    z-index: 2;
+    display: block;
+    width: 64px;
+    height: 64px;
+    user-select: none;
+    background: $background;
+    border-radius: 50%;
+    transform: scale($scale);
+    -webkit-touch-callout: none;
+
+    @extend .reset-button;
+
+    #burger-top,
+    #burger-bottom {
+      position: absolute;
+      display: block;
+      width: 36px;
+      height: 4px;
+      background: $color;
+      border-radius: 2px;
+      transition: all $animation * (2 / 3) cubic-bezier(0.8, -1.1, 0.5, 1.9); // x to = animation
+      transform: rotate(0deg); // to prevent pixelatedness
+      transform-origin: 34px 2px;
+    }
+
+    #burger-top {
+      top: 19px;
+      left: 14px;
+    }
+
+    #burger-bottom {
+      top: 41px;
+      left: 14px;
+    }
+
+    #burger-circle {
+      stroke-dasharray: 1 100 32 300; // 32 is the hamburger size
+      stroke-dashoffset: 101; // setting up a gap to swipe in from the left
+      transition: all $animation ease;
+    }
+
+    path,
+    line {
+      stroke: $color;
+      stroke-linecap: round;
+    }
+
+    &.nav-burger--open {
+      border-radius: 32px;
+
+      #burger-circle {
+        stroke-dasharray: 1 100 190 300;
+        stroke-dashoffset: 1;
+      }
+
+      // Rotate the top and bottom 'bum' to make a cross, and shift them to
+      // the right a little bit
+      #burger-top {
+        transform: translateX(-4.5px) rotate(-45deg);
+      }
+
+      #burger-bottom {
+        transform: translateX(-4.5px) rotate(45deg);
       }
     }
   }

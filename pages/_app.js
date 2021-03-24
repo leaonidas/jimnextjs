@@ -8,6 +8,7 @@ function MyApp({ Component, pageProps }) {
       <PageTransition timeout={300} classNames="page-transition">
         <Component {...pageProps} />
       </PageTransition>
+
       <style jsx global>{`
         .page-transition-enter {
           opacity: 0;
