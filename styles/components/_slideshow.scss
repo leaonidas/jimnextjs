@@ -83,3 +83,51 @@
     }
   }
 }
+
+.slick-arrow {
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border: 1px solid #c8c8c8;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 5, 10, 0.2);
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    content: '';
+    background-repeat: no-repeat;
+    background-size: 8px auto;
+  }
+
+  &.slick-prev {
+    left: 24px;
+
+    &::before {
+      background-image: url('/images/chevron-left.svg');
+      background-position: 48% 50%;
+    }
+  }
+
+  &.slick-next {
+    right: 24px;
+
+    &::before {
+      background-image: url('/images/chevron-right.svg');
+      background-position: 52% 50%;
+    }
+  }
+}
