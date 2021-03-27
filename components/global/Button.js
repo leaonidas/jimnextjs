@@ -1,7 +1,7 @@
-import cn from 'classNames';
+import classNames from 'classnames';
 
 export default function Button({ children, ...props }) {
-  const className = cn({
+  const className = classNames({
     btn: true,
     'btn--primary': props.variant !== undefined,
     'btn--secondary': props.variant === 'secondary',
