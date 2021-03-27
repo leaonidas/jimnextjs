@@ -26,6 +26,7 @@
     "*.{js,css,md}": "prettier --write"
   },
   "dependencies": {
+    "classnames": "2.2.6",
     "glob": "7.1.6",
     "gray-matter": "4.0.2",
     "next": "10.0.5",
