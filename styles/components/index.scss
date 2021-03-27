@@ -73,10 +73,10 @@ section {
 
       &:not(:last-of-type) {
         margin-bottom: 40px;
-      }
 
-      @media (min-width: $screen-sm) {
-        margin: 0;
+        @media (min-width: $screen-sm) {
+          margin-bottom: 0;
+        }
       }
     }
 
