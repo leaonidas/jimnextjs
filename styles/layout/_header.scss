@@ -80,7 +80,7 @@
 
         a {
           font-size: 22px;
-          color: black;
+          color: $black;
 
           @media (min-width: $screen-md) {
             margin-bottom: 0;
@@ -89,7 +89,7 @@
 
           &:hover,
           &:focus {
-            color: $stiletto;
+            color: $grey;
           }
         }
       }
@@ -97,7 +97,7 @@
   }
 
   .nav-burger {
-    $color: $stiletto; // icon color
+    $color: $grey; // icon color
     $background: transparent; // background color
     $animation: 750ms; // animation speed
     $scale: 0.8; // icon scale 68/68 default

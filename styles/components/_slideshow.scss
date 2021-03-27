@@ -29,13 +29,6 @@
   border-radius: 3px;
 }
 
-.slick-prev,
-.slick-next {
-  &::before {
-    color: $stiletto;
-  }
-}
-
 .slick-dots {
   right: 0;
   bottom: -30px;
