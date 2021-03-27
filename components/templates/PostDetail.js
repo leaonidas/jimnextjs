@@ -18,7 +18,7 @@ export default function PostDetail({ post }) {
 
       <section>
         <Container>
-          <div className="section__header">
+          <div className="section-main">
             {title && <h1>{title}</h1>}
             {location && <p>{location}</p>}
             {year && <p>{year}</p>}

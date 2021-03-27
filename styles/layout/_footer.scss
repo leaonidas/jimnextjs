@@ -1,106 +1,144 @@
 .footer {
   width: 100%;
-  padding-top: 30px;
-  border-top: 1px solid black;
+  margin-top: 76px;
+  font-size: 16px;
+  color: white;
+  background-color: $black;
 
   .container {
     display: flex;
     flex-flow: column wrap;
     align-items: flex-start;
-    padding-bottom: 40px;
 
     @media (min-width: $screen-sm) {
-      flex-direction: row;
-      justify-content: space-between;
-      padding-bottom: 15px;
-    }
-  }
-
-  h2 {
-    margin: 0 0 20px;
-    line-height: 1.6em;
-  }
-
-  &-contactos__item {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 40px;
-    line-height: 1.6;
-  }
-
-  &-escritorio {
-    margin-bottom: 40px;
-
-    p {
-      margin: 0;
-    }
-
-    line-height: 1.6;
-  }
-
-  &-logos {
-    display: flex;
-    flex-flow: column wrap;
-
-    &__group {
-      display: flex;
-      flex-flow: row wrap;
-      margin-top: 30px;
-    }
-
-    &__item {
-      margin-right: 40px;
-      margin-left: 0;
-
-      @media (min-width: $screen-sm) {
-        margin: 0 20px;
-      }
-
-      &.impic img {
-        width: 73px;
-      }
-
-      &.ruis img {
-        width: 60px;
-      }
-
-      &.aiccopn img {
-        width: 204px;
-      }
+      padding-bottom: 40px;
     }
   }
 
   a {
-    color: black;
+    font-size: 16px;
+    color: white;
+    transition: opacity 0.15s ease-in-out;
 
     &:link,
     &:visited {
-      color: black;
+      color: white;
       text-decoration: none;
     }
 
     &:hover,
     &:focus {
-      color: $maroon;
+      opacity: 0.5;
+    }
+  }
+
+  &-top {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    width: 100%;
+
+    @media (min-width: $screen-sm) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &-contactos {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+
+    @media (min-width: $screen-sm) {
+      flex-direction: row;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      margin-right: 100px;
+      margin-bottom: 40px;
+      line-height: 1.6;
+
+      @media (min-width: $screen-sm) {
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  &-escritorio {
+    margin-bottom: 40px;
+    line-height: 1.6;
+
+    @media (min-width: $screen-sm) {
+      margin-bottom: 60px;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &-logos {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+
+    &__item {
+      margin-right: 40px;
+      margin-bottom: 28px;
+      margin-left: 0;
+
+      @media (min-width: $screen-sm) {
+        margin-right: 60px;
+        margin-bottom: 0;
+      }
+
+      img {
+        max-height: 81px;
+      }
     }
   }
 
   .subfooter {
+    padding-bottom: 40px;
     color: white;
-    background-color: $stiletto;
+
+    @media (min-width: $screen-sm) {
+      padding: 40px 0;
+    }
 
     .container {
       @media (min-width: $screen-sm) {
+        flex-direction: row;
         align-items: center;
+        justify-content: space-between;
+      }
+    }
+
+    p > strong {
+      display: block;
+      width: 100%;
+      line-height: 32px;
+
+      @media (min-width: $screen-sm) {
+        display: inline-block;
+        width: auto;
+        line-height: 1.4em;
       }
     }
 
     &-icons a {
+      display: inline-block;
       margin-right: 24px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
     }
 
     &-icons a img {
-      width: 36px;
+      width: 24px;
     }
   }
 }

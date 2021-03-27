@@ -7,7 +7,7 @@ export default function Slideshow({ children, customsettings = {} }) {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 4000,
     arrows: false,
     ...customsettings

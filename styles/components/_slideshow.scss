@@ -37,35 +37,49 @@
 }
 
 .slick-dots {
-  right: auto;
-  bottom: -20px;
+  right: 0;
+  bottom: -30px;
   left: 0;
   display: inline-block;
   width: auto;
-  padding: 12px 16px;
-  background-color: white;
-  border-radius: 4px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.04);
 
   li button::before {
     display: inline-block;
-    width: 16px;
-    height: 16px;
+    width: 10px;
+    height: 10px;
+    margin: auto;
     content: '';
-    background-color: #eaeaea;
-    border: 1px solid #eaeaea;
+    background-color: $lightgrey;
+    border: none;
     border-radius: 50%;
     opacity: 1;
     transition: opacity 0.3s ease-in;
+  }
+
+  li,
+  li > button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+    content: none;
+  }
+
+  li {
+    margin: 0 6px;
+    transition: opacity 0.3s ease-in-out;
 
     &:hover,
     &:focus {
       opacity: 0.3;
     }
-  }
 
-  li.slick-active button::before {
-    background-color: white;
-    border: 1px solid $stiletto;
+    &.slick-active button::before {
+      background-color: $black;
+    }
   }
 }

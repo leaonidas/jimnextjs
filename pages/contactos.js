@@ -6,7 +6,7 @@ export default function Contactos() {
     <BaseLayout>
       <Container>
         <section>
-          <div className="section__header">
+          <div className="section-main">
             <h1>Contactos</h1>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.

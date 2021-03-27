@@ -10,7 +10,7 @@ export default function Obras(props) {
     <BaseLayout>
       <Container>
         <section>
-          <div className="section__header">
+          <div className="section-main">
             <h1>Obras</h1>
             <p>Explore o nosso portefólio.</p>
           </div>

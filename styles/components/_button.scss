@@ -1,0 +1,31 @@
+.btn {
+  @extend .reset-button;
+
+  display: inline-flex;
+  padding: 5px 12px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  color: white;
+  cursor: pointer;
+  background-color: $red;
+  border-radius: 4px;
+  box-shadow: 0 2px 1px rgba(0, 1, 26, 0.04);
+  transition: box-shadow 0.2s ease;
+
+  @media (min-width: $screen-sm) {
+    padding: 7px 16px 6px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 5, 10, 0.3);
+  }
+
+  &--secondary {
+    color: $black;
+    background-color: white;
+  }
+}

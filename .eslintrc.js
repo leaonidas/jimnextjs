@@ -34,6 +34,7 @@ module.exports = {
     'simple-import-sort/sort': 'error',
     'jsx-a11y/anchor-is-valid': 'off',
     'unicorn/prevent-abbreviations': 'off',
+    'unicorn/no-abusive-eslint-disable': 'off',
     'unicorn/filename-case': [
       'error',
       {

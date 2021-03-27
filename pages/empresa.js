@@ -6,7 +6,7 @@ export default function Empresa() {
     <BaseLayout>
       <Container>
         <section>
-          <div className="section__header">
+          <div className="section-main">
             <h1>Empresa</h1>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.

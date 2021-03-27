@@ -9,12 +9,12 @@ export default function Meta(props) {
       <link
         rel="preload"
         as="style"
-        href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       />
 
       <link
         rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
         media="print"
         onLoad="this.media='all'"
       />
@@ -22,7 +22,7 @@ export default function Meta(props) {
       <noscript>
         <link
           rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
         />
       </noscript>
       <link
