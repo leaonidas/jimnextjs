@@ -1,3 +1,4 @@
+import Button from 'components/global/Button';
 import Link from 'next/link';
 
 export default function ObraThumbnail(props, { className = '' }) {
@@ -14,7 +15,7 @@ export default function ObraThumbnail(props, { className = '' }) {
               <p>{year}</p>
             </div>
             <div className="project-info__inner-cta">
-              <span>Ver mais</span>
+              <Button variant="secondary">Ver mais</Button>
             </div>
           </div>
         </div>

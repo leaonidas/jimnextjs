@@ -6,7 +6,8 @@
   display: block;
   padding: 0 !important;
   color: white;
-  background: linear-gradient(88.67deg, #f6003b 31.2%, #ff5943 107.45%);
+  background-color: $red;
+  background-image: linear-gradient(88.67deg, #f6003b 31.2%, #ff5943 107.45%);
   border-radius: 12px;
 
   @media (min-width: $screen-sm) {
