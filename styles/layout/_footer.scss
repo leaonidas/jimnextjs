@@ -41,10 +41,11 @@
       flex-direction: column;
       margin-right: 100px;
       margin-bottom: 40px;
-      line-height: 1.6;
+      line-height: 2;
 
       @media (min-width: $screen-sm) {
         margin-bottom: 60px;
+        line-height: 1.6;
       }
 
       a {
@@ -64,10 +65,11 @@
 
   &-escritorio {
     margin-bottom: 40px;
-    line-height: 1.6;
+    line-height: 2;
 
     @media (min-width: $screen-sm) {
       margin-bottom: 60px;
+      line-height: 1.6;
     }
 
     p {

@@ -85,11 +85,11 @@
 }
 
 .slick-arrow {
-  z-index: 10;
+  z-index: 3;
   width: 40px;
   height: 40px;
   background-color: white;
-  border: 1px solid #c8c8c8;
+  border: 1px solid $grey;
   border-radius: 50%;
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.04);
   transition: box-shadow 0.2s ease-in-out;
@@ -97,6 +97,9 @@
   &:hover,
   &:focus {
     background-color: white;
+  }
+
+  &:hover {
     box-shadow: 0 4px 6px rgba(0, 5, 10, 0.2);
   }
 

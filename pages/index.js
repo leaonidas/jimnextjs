@@ -2,6 +2,8 @@ import Container from 'components/global/Container';
 import Slideshow from 'components/global/Slideshow';
 import BaseLayout from 'components/layout/BaseLayout';
 import { BiWallet } from 'react-icons/bi';
+import { CgEye } from 'react-icons/cg';
+import { FaRegHandshake } from 'react-icons/fa';
 
 export default function Home() {
   return (
@@ -13,6 +15,7 @@ export default function Home() {
             <p>Mais de 20 anos de experiência ao seu dispor.</p>
           </div>
         </Container>
+
         <Container className="container--big">
           <Slideshow>
             <div className="slideshow__slide">
@@ -33,7 +36,7 @@ export default function Home() {
 
       <section className="home-values">
         <Container>
-          <h2>Engenharia e Construção</h2>
+          <h2>Os nossos valores</h2>
 
           <div className="section-cols">
             <div className="section-cols__item">
@@ -43,27 +46,27 @@ export default function Home() {
               <h3>Confiança</h3>
               <p>
                 A integridade e a comunicação aberta é o que nos move e nos
-                permite atingir os melhores resultados
+                permite atingir os melhores resultados.
               </p>
             </div>
             <div className="section-cols__item">
               <div className="icon">
-                <BiWallet />
+                <CgEye />
               </div>
-              <h3>Confiança</h3>
+              <h3>Visão</h3>
               <p>
-                A integridade e a comunicação aberta é o que nos move e nos
-                permite atingir os melhores resultados
+                A visão a longo prazo é uma constante, sempre em colaboração com
+                a vontade dos nossos clientes.
               </p>
             </div>
             <div className="section-cols__item">
               <div className="icon">
-                <BiWallet />
+                <FaRegHandshake />
               </div>
-              <h3>Confiança</h3>
+              <h3>Parcerias</h3>
               <p>
-                A integridade e a comunicação aberta é o que nos move e nos
-                permite atingir os melhores resultados
+                Trabalhamos com os clientes e não para eles, valorizando ao
+                máximo a sua participação.
               </p>
             </div>
           </div>

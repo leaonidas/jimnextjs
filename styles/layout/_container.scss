@@ -22,6 +22,12 @@
   }
 
   &--big {
+    padding: 0;
+
+    @media (min-width: $screen-sm) {
+      padding: 15px;
+    }
+
     @media (min-width: $screen-lg) {
       width: calc(100% - 60px);
       max-width: 1600px;
