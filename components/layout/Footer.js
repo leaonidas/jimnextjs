@@ -12,9 +12,9 @@ export default function Footer() {
           A JIM Building é uma empresa de construção baseada em Guimarães. Com
           mais de 20 anos de experiência em construção e consultoria financeira.
         </p>
-        <Link href="/">
-          <Button variant="secondary">Conheça as nossas obras</Button>
-        </Link>
+        <Button variant="secondary">
+          <Link href="/">Conheça as nossas obras</Link>
+        </Button>
       </PreFooter>
 
       <Container>
@@ -75,17 +75,15 @@ export default function Footer() {
             </a>
           </div>
         </div>
-      </Container>
 
-      <div className="subfooter">
-        <Container>
+        <div className="footer-bottom">
           <p>
             Copyright
             <strong> &copy; JIM BUILDING - Engenharia, Lda. </strong>
             2021
           </p>
 
-          <div className="subfooter-icons">
+          <div className="footer-bottom__icons">
             <a
               href="https://www.facebook.com/JIM-Building-Engenharia-620231095066877"
               target="_blank"
@@ -101,8 +99,8 @@ export default function Footer() {
               <img src="/images/instagram.svg" alt="IG logo" />
             </a>
           </div>
-        </Container>
-      </div>
+        </div>
+      </Container>
     </footer>
   );
 }

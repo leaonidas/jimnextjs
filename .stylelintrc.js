@@ -54,6 +54,7 @@ module.exports = {
     // ===
     // SCSS
     // ===
+    'no-descending-specificity': null,
     'value-keyword-case': null,
     'scss/dollar-variable-colon-space-after': 'always',
     'scss/dollar-variable-colon-space-before': 'never',

@@ -6,30 +6,6 @@ export default function Meta(props) {
 
   return (
     <Head>
-      <link
-        rel="preload"
-        as="style"
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      />
-
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-        media="print"
-        onLoad="this.media='all'"
-      />
-
-      <noscript>
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-        />
-      </noscript>
-      <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossOrigin="true"
-      />
       <title>{title ? title : 'JIM Building'}</title>
       <meta
         name="description"

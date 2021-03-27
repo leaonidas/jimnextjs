@@ -15,23 +15,6 @@
     }
   }
 
-  a {
-    font-size: 16px;
-    color: white;
-    transition: opacity 0.15s ease-in-out;
-
-    &:link,
-    &:visited {
-      color: white;
-      text-decoration: none;
-    }
-
-    &:hover,
-    &:focus {
-      opacity: 0.5;
-    }
-  }
-
   &-top {
     display: flex;
     flex-flow: column wrap;
@@ -62,6 +45,19 @@
 
       @media (min-width: $screen-sm) {
         margin-bottom: 60px;
+      }
+
+      a {
+        font-size: 16px;
+        line-height: 1.6;
+        color: white;
+        transition: opacity 0.15s ease-in-out;
+
+        &:hover,
+        &:focus {
+          color: white;
+          opacity: 0.5;
+        }
       }
     }
   }
@@ -94,25 +90,52 @@
         margin-bottom: 0;
       }
 
+      a {
+        transition: opacity 0.15s ease-in-out;
+
+        &:hover,
+        &:focus {
+          color: white;
+          opacity: 0.5;
+        }
+      }
+
       img {
         max-height: 81px;
       }
     }
   }
 
-  .subfooter {
-    padding-bottom: 40px;
+  .footer-bottom {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
     color: white;
 
     @media (min-width: $screen-sm) {
-      padding: 40px 0;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 40px 0 0;
     }
 
-    .container {
-      @media (min-width: $screen-sm) {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+    &__icons a {
+      display: inline-block;
+      margin-right: 24px;
+      transition: opacity 0.15s ease-in-out;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      &:hover,
+      &:focus {
+        color: white;
+        opacity: 0.5;
+      }
+
+      img {
+        width: 24px;
       }
     }
 
@@ -126,19 +149,6 @@
         width: auto;
         line-height: 1.4em;
       }
-    }
-
-    &-icons a {
-      display: inline-block;
-      margin-right: 24px;
-
-      &:last-of-type {
-        margin-right: 0;
-      }
-    }
-
-    &-icons a img {
-      width: 24px;
     }
   }
 }

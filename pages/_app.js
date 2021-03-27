@@ -1,12 +1,14 @@
 import '../styles/all.scss';
 
 import { PageTransition } from 'next-page-transitions';
+import { useRouter } from 'next/router';
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
   return (
     <>
       <PageTransition timeout={300} classNames="page-transition">
-        <Component {...pageProps} />
+        <Component key={router.pathname} {...pageProps} />
       </PageTransition>
 
       <style jsx global>{`
