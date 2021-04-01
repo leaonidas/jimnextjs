@@ -87,9 +87,24 @@
             font-size: 18px;
           }
 
-          &:hover,
-          &:focus {
+          &:focus,
+          &:active,
+          &:visited {
+            color: $black;
+          }
+
+          &:hover {
             color: $grey;
+          }
+        }
+
+        &.active a {
+          color: $red;
+          pointer-events: none;
+          cursor: normal;
+
+          &:hover {
+            color: $red;
           }
         }
       }
@@ -97,14 +112,15 @@
   }
 
   .nav-burger {
-    $color: $grey; // icon color
+    $color: $black;
+    $color-open: $grey; // icon color
     $background: transparent; // background color
     $animation: 750ms; // animation speed
     $scale: 0.8; // icon scale 68/68 default
 
     position: relative;
     top: -10px;
-    right: -5px;
+    right: -15px;
     z-index: 11;
     display: block;
     width: 64px;
@@ -140,33 +156,16 @@
       left: 14px;
     }
 
-    #burger-circle {
-      stroke-dasharray: 1 100 32 300; // 32 is the hamburger size
-      stroke-dashoffset: 101; // setting up a gap to swipe in from the left
-      transition: all $animation ease;
-    }
-
-    path,
-    line {
-      stroke: $color;
-      stroke-linecap: round;
-    }
-
     &.nav-burger--open {
-      border-radius: 32px;
-
-      #burger-circle {
-        stroke-dasharray: 1 100 190 300;
-        stroke-dashoffset: 1;
-      }
-
       // Rotate the top and bottom 'bum' to make a cross, and shift them to
       // the right a little bit
       #burger-top {
+        background-color: $color-open;
         transform: translateX(-4.5px) rotate(-45deg);
       }
 
       #burger-bottom {
+        background-color: $color-open;
         transform: translateX(-4.5px) rotate(45deg);
       }
     }

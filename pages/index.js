@@ -1,13 +1,12 @@
 import Container from 'components/global/Container';
 import Slideshow from 'components/global/Slideshow';
-import BaseLayout from 'components/layout/BaseLayout';
 import { BiWallet } from 'react-icons/bi';
 import { CgEye } from 'react-icons/cg';
 import { FaRegHandshake } from 'react-icons/fa';
 
 export default function Home() {
   return (
-    <BaseLayout>
+    <>
       <section className="home-slideshow">
         <Container>
           <div className="section-main">
@@ -33,7 +32,6 @@ export default function Home() {
           </Slideshow>
         </Container>
       </section>
-
       <section className="home-values">
         <Container>
           <h2>Os nossos valores</h2>
@@ -72,6 +70,6 @@ export default function Home() {
           </div>
         </Container>
       </section>
-    </BaseLayout>
+    </>
   );
 }

@@ -2,8 +2,12 @@ import Button from 'components/global/Button';
 import Container from 'components/global/Container';
 import PreFooter from 'components/global/PreFooter';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 export default function Footer() {
+  const router = useRouter();
+  const isObrasPage = router.pathname === '/obras';
+
   return (
     <footer className="footer">
       <PreFooter>
@@ -13,7 +17,11 @@ export default function Footer() {
           mais de 20 anos de experiência em construção e consultoria financeira.
         </p>
         <Button variant="secondary">
-          <Link href="/">Conheça as nossas obras</Link>
+          {!isObrasPage ? (
+            <Link href="/obras">Conheça as nossas obras</Link>
+          ) : (
+            <Link href="/empresa">Conheça a JIM Building</Link>
+          )}
         </Button>
       </PreFooter>
 
@@ -78,8 +86,7 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <p>
-            Copyright
-            <strong> &copy; JIM BUILDING - Engenharia, Lda. </strong>
+            Copyright <strong> &copy; JIM BUILDING - Engenharia, Lda.</strong>{' '}
             2021
           </p>
 

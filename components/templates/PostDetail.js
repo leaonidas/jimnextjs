@@ -1,6 +1,5 @@
 import Container from 'components/global/Container';
 import { Markdown } from 'components/global/Markdown';
-import BaseLayout from 'components/layout/BaseLayout';
 import BaseMeta from 'components/layout/BaseMeta';
 import Image from 'next/image';
 
@@ -8,7 +7,7 @@ export default function PostDetail({ post }) {
   const { title, location, year } = post;
 
   return (
-    <BaseLayout>
+    <>
       <BaseMeta
         title={post.title}
         desc={post.description}
@@ -27,7 +26,7 @@ export default function PostDetail({ post }) {
         <Container className="container--big">
           {post.bannerImage && (
             <Image
-              className="detail-post-image"
+              className="post-detail-image"
               src={post.bannerImage}
               alt={post.bannerImageAlt}
               width="1440"
@@ -37,13 +36,13 @@ export default function PostDetail({ post }) {
         </Container>
       </section>
 
-      <div className="detail-post">
+      <div className="post-detail">
         <Container>
-          <div className="detail-post-content">
+          <div className="post-detail-content">
             <Markdown source={post.content} />
           </div>
         </Container>
       </div>
-    </BaseLayout>
+    </>
   );
 }

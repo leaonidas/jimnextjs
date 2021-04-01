@@ -6,7 +6,7 @@ location: Guimarães
 year: 2018
 thumbnailImage: /images/obras/placeholders/imagem-6.jpg
 thumbnailAlt: Fachada edifício
-bannerImage: /images/obras/placeholders/imagem-6.jpg
+bannerImage: /images/obras/placeholders/obra-cover.jpg
 bannerImageAlt: Fachada edifício
 canonicalUrl: https://jimbuilding.com/obras/obra-6
 ---
@@ -15,4 +15,4 @@ canonicalUrl: https://jimbuilding.com/obras/obra-6
 
 Obra espetacular que demorou 10 anos a desenvolver.
 
-![Fachada entrada](/images/obras/placeholders/imagem-6.jpg 'Fachada entrada')
+![Fachada entrada](/images/obras/placeholders/obra-small.jpg 'Fachada entrada')
